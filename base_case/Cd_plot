@@ -1,6 +1,0 @@
-
-set xlabel "Time [sec]"
-set ylabel "Drag coefficient [-]"
-set yrange [0:100]
-
-plot "postProcessing/forceCoeffsCyl/0/forceCoeffs.dat" using 1:3 title  "Drag coefficient" with line ls 1 

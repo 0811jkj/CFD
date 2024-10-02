@@ -1,6 +1,0 @@
-
-set xlabel "Time [sec]"
-set ylabel "Lift coefficient [-]"
-set yrange [-100:5]
-
-plot "postProcessing/forceCoeffsCyl/0/forceCoeffs.dat" using 1:4 title  "Lift coefficient" with line ls 1 
