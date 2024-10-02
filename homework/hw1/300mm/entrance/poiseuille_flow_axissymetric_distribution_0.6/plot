@@ -1,0 +1,16 @@
+set parametric
+dpdx = -8
+mu = 1e-04
+h=1e-02
+
+set xlabel "Velocity magnitude [m/s]"
+set ylabel "Length [m]"
+
+plot [0:h] -dpdx/mu/4*(h**2-t**2),t title  "Analytical" with lines ls 7, \
+     "postProcessing/sets/0.5/data_U.xy" using 2:1 title  "t = 0.5 s" with point ls 1 
+
+
+
+
+
+
